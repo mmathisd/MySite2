@@ -11,12 +11,17 @@ h1 {
     Font-size: 25px;
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: black;
 }
 
 li {
@@ -31,17 +36,14 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
-    background-color:rgb(7, 7, 7);
-}
+
 
 li.dropdown {
-    display: inline-block;
+    display: inline;
 }
 
 
 .dropbtn {
-    background-color: rgb(14, 13, 13);
     color: rgb(245, 236, 236);
     padding: 16px;
     font-size: 16px;
@@ -51,7 +53,7 @@ li.dropdown {
 
 .dropdown {
     position: relative;
-    display: inline-block;
+    display: inline;
 }
 
 .dropdown-content {
@@ -64,13 +66,14 @@ li.dropdown {
 }
 
 .dropdown-content a {
-    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #c5bdbd}
+.dropdown-content a:hover {
+    background-color: #c5bdbd
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
