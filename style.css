@@ -1,0 +1,81 @@
+body {
+        /*background-color: rgb(53, 49, 49);
+        Width: 100%;
+        Margin: auto;*/
+        background-image: url(Darkspots.jpg);
+}
+
+h1 {
+    color: white;
+    text-align: right;
+    Font-size: 25px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color:rgb(7, 7, 7);
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+
+.dropbtn {
+    background-color: rgb(14, 13, 13);
+    color: rgb(245, 236, 236);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: left;
+    background-color: #726d6d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #c5bdbd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: grey;
+}

@@ -1,0 +1,85 @@
+body {
+    background-color:#f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+}
+h1 {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+ul {
+    margin: 0px; /* Clearing out margins */
+    padding: 0px; /* Clearing out padding */
+    list-style: none; /* Removes any bullets */
+}
+
+ul li {
+    float: left; /*Ensures text aligns left */
+    width: 200px;
+    height: 30px;
+    background-color: black;
+    opacity: .75;
+    line-height: 30px;
+    text-align: center;
+    margin-right: 2px;
+}
+
+ul li a {
+    text-decoration: none; /*Prevents underlining, etc */
+    color: white;
+    display: block; /* Block element starts on a new line and takes the whole width */
+    }
+
+ul li a:hover {
+    background-color: green; /*This highlights each item when hovered */
+}
+
+ul li ul li {
+    display: none; /* Hides the sub-menu elements until they are selected */
+}
+
+ul li:hover ul li {
+    display: block; /* Displays sub menus when selected "hovered" */
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    box-sizing: border-box;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    Margin: 0% auto;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+    text-align: center;
+
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+
+}
