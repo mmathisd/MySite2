@@ -1,23 +1,196 @@
 <!DOCTYPE html>
 
 <html>
-        <head>
-                <link rel = "stylesheet" href = "portrait.css">
-                <title> Portrait</title>
-            </head>
 
-            <body>
-                <h1> Portrait </h1>
+<head>
+    <link rel="stylesheet" href="portrait.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Portrait</title>
+</head>
 
-                <h2> Mario Mathis Imagery</h2>
-                <nav>
-                        <div class="topnav">
-                            <a href="index.html"> Home </a>
-                            <a href="motion.html"> Motion</a>
-                            <a href="travel.html"> Travel</a>
-                        </div>
-                    </nav>
+<body>
+    <h1> Portrait </h1>
+
+    <h2> Mario Mathis Imagery</h2>
+    <nav>
+        <div class="topnav">
+            <a href="index.html"> Home </a>
+            <a href="motion.html"> Motion</a>
+            <a href="travel.html"> Travel</a>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="row">
+        <div class="column">
+            <img src="emmit.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="sunflower.jpeg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_3279.jpeg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_2431.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_0508.jpeg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_0514.jpeg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_1977.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_2193.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_2338.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+            <img src="IMG_2893.jpeg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 10</div>
+                <img src="emmit.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 10</div>
+                <img src="sunflower.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 10</div>
+                <img src="IMG_3279.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 10</div>
+                <img src="IMG_2431.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">5 / 10</div>
+                <img src="IMG_0508.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">6 / 10</div>
+                <img src="IMG_0514.jpeg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">7 / 10</div>
+                <img src="IMG_1977.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">8 / 10</div>
+                <img src="IMG_2193.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">9 / 10</div>
+                <img src="IMG_2338.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">10 / 10</div>
+                <img src="IMG_2893.jpeg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
 
 
-            </body>
+            <div class="column">
+                <img class="demo cursor" src="emmit.jpg" style="width:100%" onclick="currentSlide(1)" alt="Growing Pains">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="sunflower.jpeg" style="width:100%" onclick="currentSlide(2)" alt="SunFlow">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_3279.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Lil Pirate">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_2431.jpg" style="width:100%" onclick="currentSlide(4)" alt="Mountain Life">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_0508.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Lil Mario">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_0514.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Sibling Love">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_1977.jpg" style="width:100%" onclick="currentSlide(7)" alt="Grand Canyon">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_2193.jpg" style="width:100%" onclick="currentSlide(8)" alt="Bryzzo">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_2338.jpg" style="width:100%" onclick="currentSlide(9)" alt="Cowboys Baby">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="IMG_2893.jpeg" style="width:100%" onclick="currentSlide(10)" alt="Beautiful Colorado Fall">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('myModal').style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+</body>
+
 </html>

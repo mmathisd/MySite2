@@ -31,3 +31,16 @@ h2 {
     color: black;
 
 }
+
+h3 {
+    color: white;
+    Font-size: 24px;
+    text-align: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
