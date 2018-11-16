@@ -31,3 +31,20 @@ h2 {
     color: black;
 
 }
+
+.picture-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-items:center;
+    grid-gap: 5px;
+    grid-row-gap: 0px;
+
+}
+
+.grid-box {
+    border-radius: 5px;
+}
+
+.grid-box img {
+    width: 100%;
+}
