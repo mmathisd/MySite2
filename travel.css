@@ -2,6 +2,9 @@ body {
     background-image: url(Darkspots.jpg);
     Width: 100%;
     Margin: auto;
+    display: grid;
+    grid-template-columns: 12 1fr;
+    grid-auto-columns: minimax (5px, auto);
 }
 
 h1 {
